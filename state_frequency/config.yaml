@@ -1,0 +1,4 @@
+# Set FLAG AS True to enable processing of each task lists.
+hdfs_paths:
+  INPUT_PATH : "/markov/customer/"
+  RESULT_PATH : "/markov/out/"
