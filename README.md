@@ -1,5 +1,5 @@
-Markov Chain Model Case Study
-=============================
+Markov Chain Case Study to torget Customer future requirements
+==============================================================
 
 Any consumer of product and services has a natural rhythm to his or her purchase history. Regular customers tend to visit a business according
 to some temporal patterns inherent in their buying history of products and services.
@@ -14,17 +14,18 @@ P(S1,S2, . . .,Sn) = P(Si, Si1) Where i = (1, n)
 Assume we have historical customer transaction data that includes transaction-id, customer-id, purchase-date, and amount. Therefore, each input
 record will have the following format:
 
-<customerID>,<transactionID>,<purchaseDate>,<amount>
-V31E55G4FI,1381872898,2013-01-01,123
-301UNH7I2F,1381872899,2013-01-01,148
-PP2KVIR4LD,1381872900,2013-01-01,163
-AC57MM3WNV,1381872901,2013-01-01,188
-BN020INHUM,1381872902,2013-01-01,116
-UP8R2SOR77,1381872903,2013-01-01,183
-VD91210MGH,1381872904,2013-01-01,204
-COI4OXHET1,1381872905,2013-01-01,78
-76S34ZE89C,1381872906,2013-01-01,105
-6K3SNF2EG1,1381872907,2013-01-01,214
+|customerID|transactionID|purchaseDate|amount|
+| --- | --- |---|---|
+|V31E55G4FI|1381872898|2013-01-01|123|
+|301UNH7I2F|1381872899|2013-01-01|148|
+|PP2KVIR4LD|1381872900|2013-01-01|163|
+|AC57MM3WNV|1381872901|2013-01-01|188|
+|BN020INHUM|1381872902|2013-01-01|116|
+|UP8R2SOR77|1381872903|2013-01-01|183|
+|VD91210MGH|1381872904|2013-01-01|204|
+|COI4OXHET1|1381872905|2013-01-01|78|
+|76S34ZE89C|1381872906|2013-01-01|105|
+|6K3SNF2EG1|1381872907|2013-01-01|214|
 
 
 Our aim is to create one model from this data so predict next state of the user. So that we can send promotional email to the user.
@@ -41,10 +42,12 @@ We will calculate price difference between two transaction.
 3. Else we will assign G
 Example
 Let’s say user has two transaction 123 and 124 and the data is like described below
-Customer Transaction Id Purchase Date Amount
-1 123 2013-01-01 200
-1 124 2013-01-02 300
-1 125 2013-02-03 150
+
+|Customer| Transaction Id| Purchase Date| Amount|
+|---|---|---|---|
+|1 | 123 |2013-01-01 |200|
+|1| 124 |2013-01-02| 300|
+|1 |125 |2013-02-03 |150|
 In the above case:
 we will get two states one for (124,123) and one for (125,124)
 1. State for (124, 123)
