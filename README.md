@@ -4,7 +4,9 @@ Markov Chain Case Study to torget Customer future requirements
 Any consumer of product and services has a natural rhythm to his or her purchase history. Regular customers tend to visit a business according
 to some temporal patterns inherent in their buying history of products and services.
 
-##Markov Chain
+Markov Chain
+------------
+
 Let S = { S 1, S 2, S 3, ...} be a set of finite states. We want to collect the following probabilities:
 P ( Sn | Sn –1, Sn –2, ..., S 1)
 Markov’s first-order assumption is the following: P ( Sn | Sn –1, Sn –2, ..., S 1) P ( Sn | Sn –1)
